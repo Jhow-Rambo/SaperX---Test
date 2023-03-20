@@ -1,13 +1,11 @@
-import SideBar from "../components/SideBar";
 import Welcome from "../components/Welcome";
-import { FunctionComponent } from "react";
+import { FunctionComponent, Fragment } from "react";
 
 const HomePage: FunctionComponent = () => {
   return (
-    <div>
-      <SideBar />
+    <Fragment>
       <Welcome />
-    </div>
+    </Fragment>
   );
 };
 

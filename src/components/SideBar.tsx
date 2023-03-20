@@ -5,12 +5,15 @@ import DashboardIcon from "@mui/icons-material/Dashboard";
 import PersonAddAltIcon from "@mui/icons-material/PersonAddAlt";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import SettingsIcon from "@mui/icons-material/Settings";
+import { Link } from "react-router-dom";
 
 const SideBar: FunctionComponent = () => {
   return (
     <div className="w-32 h-screen left-0 bg-[#F8F9FB] items-center flex flex-col py-6 justify-between absolute">
       <div className="flex flex-col items-center w-full">
-        <img src={logo} alt="" width={32} height={32} className="mb-10"></img>
+        <Link to="/">
+          <img src={logo} alt="" width={32} height={32} className="mb-10"/>
+        </Link>
         <div className="flex flex-col items-center space-y-7">
           <p className="text-[#64748B] font-medium">Menu</p>
           <DashboardIcon className="cursor-pointer text-[#434343]" />
