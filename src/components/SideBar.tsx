@@ -8,7 +8,7 @@ import SettingsIcon from "@mui/icons-material/Settings";
 
 const SideBar: FunctionComponent = () => {
   return (
-    <div className="w-32 h-screen left-0 bg-[#F8F9FB] items-center flex flex-col py-6 justify-between">
+    <div className="w-32 h-screen left-0 bg-[#F8F9FB] items-center flex flex-col py-6 justify-between absolute">
       <div className="flex flex-col items-center w-full">
         <img src={logo} alt="" width={32} height={32} className="mb-10"></img>
         <div className="flex flex-col items-center space-y-7">
